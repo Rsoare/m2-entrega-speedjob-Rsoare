@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,32 @@
     <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/globalStyles.css">
     <link rel="stylesheet" href="/src/styles/index.css">
-    <title></title>
+
+    <script src="/src/scripts/database.js" defer></script>
+    <script src="/src/scripts/index.js" defer></script>
+    <title>Speed Job</title>
 </head>
+
 <body>
-    
+    <header class="header__container">
+        <h1 class="header__title">
+            Speed <span>job</span>
+        </h1>
+        <h2 class="header__sobTitle">Encontre a vaga que mais se parece com você</h2>
+        <nav class="nav__container">
+            <button>Vagas Frontend</button>
+            <button>Vagas Backend</button>
+        </nav>
+    </header>
+    <main class="main__container">
+        <section class="card__container" id="frontEnd">
+            <h3>Frontend Jobs</h3>
+        </section>
+
+        <section class="card__container" id="backEnd">
+            <h3>Backend Jobs</h3>
+        </section>
+    </main>
 </body>
+
 </html>
